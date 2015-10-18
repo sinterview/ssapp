@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}Shopsense | Login{% endblock %}
+
+
+{% block primary %}
+    <h2>Login</h2>
+    <form action="/login/loginapi/" method="POST">
+        {% csrf_token %}
+
+        <div><span>Username (Email)</span><input type="email" name="username" id="username" /></div>
+
+        <div><span>Password</span><input type="password" name="password" id="password" /></div>
+
+        <input type="submit" value="Login" />
+    </form>
+{% endblock %}
