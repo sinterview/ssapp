@@ -111,3 +111,8 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "hihello2287@gmail.com"
 EMAIL_HOST_PASSWORD = "Microsoft1!"
 EMAIL_PORT = 587
+
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
