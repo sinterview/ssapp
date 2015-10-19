@@ -1,7 +1,7 @@
 class AppConstants(object):
     DEFAULT_USER_PASSWORD = "=========="
 
-    REG_EMAIL_LINK = "http://localhost:8000/login/modpass/%s/"
+    REG_EMAIL_LINK = "http://whispering-dusk-2005.herokuapp.com/login/modpass/%s/"
 
     DEFAULT_REG_EMAIL_INFO_DICT = {
         "subject": "Complete Registration | Email Verification",
